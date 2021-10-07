@@ -9,27 +9,12 @@ from boto3 import client as boto3_client
 import face_recognition
 import pickle
 
-input_bucket = "testbucker333345"
-output_bucket = "testbucker333345out"
 
 # Function to read the 'encoding' file
-def open_encoding(filename):
-	file = open(filename, "rb")
-	data = pickle.load(file)
-	file.close()
-	return data
 
-def face_recognition_handler(event, context):	
-	print("Hello")
-
-
-
-
-
-
-input_bucket = "testbucker333345"
-output_bucket = "testbucker333345out"
-jpg_bucket = "testbucker333345jpg"
+input_bucket = "546proj3"
+output_bucket = "546proj3output"
+jpg_bucket = ""
 sys_path = "/tmp/"
 
 s3_client = boto3.client('s3')

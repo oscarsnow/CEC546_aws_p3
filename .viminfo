@@ -11,10 +11,10 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
+:wq
+|2,0,1633632612,,"wq"
 :q!
 |2,0,1633613179,,"q!"
-:wq
-|2,0,1633580831,,"wq"
 :$
 |2,0,1633580824,,"$"
 
@@ -27,26 +27,98 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
+"1	LINE	0
+	
+|3,0,1,1,1,0,1633632409,""
+"2	LINE	0
+	
+|3,0,2,1,1,0,1633632406,""
+"3	LINE	0
+	
+	
+	
+	input_bucket = "testbucker333345"
+|3,0,3,1,4,0,1633632397,"","","","input_bucket = \"testbucker333345\""
+"4	LINE	0
+	
+	
+|3,0,4,1,2,0,1633632395,"",""
+"5	LINE	0
+	
+|3,0,5,1,1,0,1633632393,""
+"6	LINE	0
+	
+	def face_recognition_handler(event, context):	
+		print("Hello")
+|3,0,6,1,3,0,1633632391,"","def face_recognition_handler(event, context):	","	print(\"Hello\")"
+"7	LINE	0
+	def open_encoding(filename):
+		file = open(filename, "rb")
+		data = pickle.load(file)
+		file.close()
+		return data
+|3,0,7,1,5,0,1633632389,"def open_encoding(filename):","	file = open(filename, \"rb\")","	data = pickle.load(file)","	file.close()","	return data"
+"8	LINE	0
+	output_bucket = "testbucker333345out"
+|3,0,8,1,1,0,1633632374,"output_bucket = \"testbucker333345out\""
+"9	LINE	0
+	input_bucket = "testbucker333345"
+|3,0,9,1,1,0,1633632373,"input_bucket = \"testbucker333345\""
+""-	CHAR	0
+	estbucker333345jpg
+|3,1,36,0,1,0,1633632599,"estbucker333345jpg"
 
 # File marks:
-'0  1  0  ~/.git/config
-|4,48,1,0,1633613179,"~/.git/config"
-'1  55  18  /etc/group
-|4,49,55,18,1633580831,"/etc/group"
+'0  39  13  ~/face_recognition_handler.py
+|4,48,39,13,1633632612,"~/face_recognition_handler.py"
+'1  1  0  ~/.git/config
+|4,49,1,0,1633613179,"~/.git/config"
+'2  55  18  /etc/group
+|4,50,55,18,1633580831,"/etc/group"
 
 # Jumplist (newest first):
+-'  39  13  ~/face_recognition_handler.py
+|4,39,39,13,1633632612,"~/face_recognition_handler.py"
+-'  16  17  ~/face_recognition_handler.py
+|4,39,16,17,1633632404,"~/face_recognition_handler.py"
+-'  12  15  ~/face_recognition_handler.py
+|4,39,12,15,1633632372,"~/face_recognition_handler.py"
+-'  1  0  ~/face_recognition_handler.py
+|4,39,1,0,1633632352,"~/face_recognition_handler.py"
+-'  1  0  ~/.git/config
+|4,39,1,0,1633613179,"~/.git/config"
 -'  1  0  ~/.git/config
 |4,39,1,0,1633613179,"~/.git/config"
 -'  55  18  /etc/group
 |4,39,55,18,1633580831,"/etc/group"
 -'  55  18  /etc/group
 |4,39,55,18,1633580831,"/etc/group"
+-'  55  18  /etc/group
+|4,39,55,18,1633580831,"/etc/group"
+-'  55  18  /etc/group
+|4,39,55,18,1633580831,"/etc/group"
+-'  1  0  /etc/group
+|4,39,1,0,1633580823,"/etc/group"
+-'  1  0  /etc/group
+|4,39,1,0,1633580823,"/etc/group"
 -'  1  0  /etc/group
 |4,39,1,0,1633580823,"/etc/group"
 -'  1  0  /etc/group
 |4,39,1,0,1633580823,"/etc/group"
 
 # History of marks within files (newest to oldest):
+
+> ~/face_recognition_handler.py
+	*	1633632611	0
+	"	39	13
+	^	39	14
+	.	17	14
+	+	12	0
+	+	16	0
+	+	14	0
+	+	15	23
+	+	16	30
+	+	17	14
 
 > ~/.git/config
 	*	1633613178	0
