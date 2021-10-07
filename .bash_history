@@ -152,3 +152,126 @@ docker images
 ffmpeg
 aws s3 ls s3://aws-asu.cse546-s3-out
 docker ps -a
+docker images
+docker rmi $(docker images -f "dangling=true" -q)
+docker images
+docker images -a
+docker images
+docker -f
+docker images
+df -h
+export LANG="en_US";export LANGUAGE="en_US";export LC_ALL="en_US";top
+ls
+pwd
+ls
+ls -lrt
+mv test_0.mp4 test_cases/test_case_1/
+mv test_1.mp4 test_cases/test_case_1/
+ls
+ls -lrt
+tar +x *.tar
+chmod +x *.tar
+ls -lrt
+chmod +x *.rar
+ls
+rm -rf *.rar
+unzip awsp3t.zip 
+sudo apt-get install unzip
+unzip awsp3t.zip 
+ls
+cd awsp3t/
+ls
+ls -lrt
+chmod +x *.py
+ls
+ls -lrt
+chmod +x *.sh
+ls -lrt
+pwd
+ls
+cd ../
+ls
+cd /home/app
+ls
+docker cp awsp3t 65d37e6d5a53:/home/app
+docker exec -it 65d37e6d5a53 /bin/bash
+docker images -a
+docker images
+docker exec -it 65d37e6d5a53 /bin/bash
+ls -lrt
+docker images 
+ls
+cd /home/
+ls
+cd ../
+ls
+cd
+ls
+l s-lrt
+ls -lrt
+cd awsp3t/
+ls
+mv * ../
+ls
+cd ../
+ls
+ls -lrt
+docker images
+docker ps -a
+docker -rm 8f4269b74ea1
+docker ps -a
+docker rm 8f4269b74ea1
+docker exec -it 65d37e6d5a53 /bin/bash
+docker ps
+ls
+pwd
+docker build -t awsp3t .
+docker ps -a
+docker images
+docker ps -a
+docker run -p 9000:8080 awsp3t&
+docker ps -a
+LS
+ls
+git inti
+git init
+ls
+git commit -m "first commit"
+git branch -M main
+git commit
+ls
+vi .git/config 
+ls
+cd
+gh repo clone oscarsnow/CEC546_aws_p3
+wget https://github.com/oscarsnow/CEC546_aws_p3.git
+ls
+wget https://github.com/oscarsnow/CEC546_aws_p3.git
+git https://github.com/oscarsnow/CEC546_aws_p3.git
+git clone https://github.com/oscarsnow/CEC546_aws_p3.git
+ks
+ls
+ssh-rsa
+git config --list
+ssh-keygen -t rsa
+git add .
+git commit -m 'frist commit'
+git branch -M main
+ls
+git remote add origin git@github.com:oscarsnow/CEC546_aws_p3.git
+git push -u origin main
+cat ~/.ssh/id_rsa.pub
+git remote add origin git@github.com:oscarsnow/CEC546_aws_p3.git
+git push -u origin main
+git clone git@github.com:oscarsnow/CEC546_aws_p3.git
+ls
+git commit -m "first commit"
+git add .
+git add.
+git add .
+git commit -m "first commit"
+git branch  -M main
+git branch
+git push -u origin main
+git push -f origin main
+export LANG="en_US";export LANGUAGE="en_US";export LC_ALL="en_US";top
