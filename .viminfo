@@ -11,17 +11,24 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/mp4
+~Msle0~/\<lambda\>
+
+# Last Substitute String:
+$
 
 # Command Line History (newest to oldest):
-:q!
-|2,0,1634210978,,"q!"
 :wq
-|2,0,1634210967,,"wq"
+|2,0,1634214491,,"wq"
+:q!
+|2,0,1634213476,,"q!"
 :$
 |2,0,1633674636,,"$"
 
 # Search String History (newest to oldest):
+? \<lambda\>
+|2,1,1634214476,,"\\<lambda\\>"
+? @$
+|2,1,1634213158,,"@$"
 ?/mp4
 |2,1,1634210901,47,"mp4"
 
@@ -32,262 +39,295 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
-"1	LINE	0
-	
-|3,0,1,1,1,0,1634210844,""
-"2	LINE	0
-	IMAGE_SHAPE = (IMAGE_WIDTH, IMAGE_HEIGHT)
-|3,0,2,1,1,0,1634210843,"IMAGE_SHAPE = (IMAGE_WIDTH, IMAGE_HEIGHT)"
-"3	LINE	0
-	
-|3,0,3,1,1,0,1634210842,""
-"4	LINE	0
-	IMAGE_HEIGHT = 224
-|3,0,4,1,1,0,1634210841,"IMAGE_HEIGHT = 224"
-"5	LINE	0
-	IMAGE_WIDTH = 224
-|3,0,5,1,1,0,1634210841,"IMAGE_WIDTH = 224"
-"6	LINE	0
-	people_i_know= f'{home_dir}/people_i_know'
-|3,0,6,1,1,0,1634210810,"people_i_know= f'{home_dir}/people_i_know'"
-"7	LINE	0
-	
-|3,0,7,1,1,0,1633679634,""
-"8	LINE	0
-	                         )
-|3,0,8,1,1,0,1633679633,"                         )"
-"9	LINE	0
-	                         config=aws_config
-|3,0,9,1,1,0,1633679632,"                         config=aws_config"
-""-	CHAR	0
+"0	CHAR	0
 	4
-|3,1,36,0,1,0,1634210876,"4"
+|3,0,0,0,1,0,1634213158,"4"
+""1	LINE	0
+	.python_history
+|3,1,1,1,1,0,1634213948,".python_history"
+"2	LINE	0
+	.profile
+|3,0,2,1,1,0,1634213947,".profile"
+"3	LINE	0
+	.bashrc
+|3,0,3,1,1,0,1634213947,".bashrc"
+"4	LINE	0
+	.bash_logout
+|3,0,4,1,1,0,1634213947,".bash_logout"
+"5	LINE	0
+	.bash_history
+|3,0,5,1,1,0,1634213946,".bash_history"
+"6	LINE	0
+	.ssh
+|3,0,6,1,1,0,1634213946,".ssh"
+"7	LINE	0
+	.docker
+|3,0,7,1,1,0,1634213946,".docker"
+"8	LINE	0
+	.cache
+|3,0,8,1,1,0,1634213945,".cache"
+"9	LINE	0
+	.aws
+|3,0,9,1,1,0,1634213944,".aws"
+"-	CHAR	0
+	4
+|3,0,36,0,1,0,1634210876,"4"
 
 # File marks:
-'0  7  7  ~/requirements.txt
-|4,48,7,7,1634210978,"~/requirements.txt"
-'1  7  7  ~/requirements.txt
-|4,49,7,7,1634210967,"~/requirements.txt"
-'2  189  0  ~/handler.py
-|4,50,189,0,1634210909,"~/handler.py"
-'3  25  16  ~/reads3out.py
-|4,51,25,16,1634210341,"~/reads3out.py"
-'4  24  120  ~/reads3out.py
-|4,52,24,120,1634210306,"~/reads3out.py"
-'5  24  120  ~/reads3out.py
-|4,53,24,120,1634210306,"~/reads3out.py"
-'6  24  119  ~/reads3out.py
-|4,54,24,119,1634210271,"~/reads3out.py"
-'7  24  119  ~/reads3out.py
-|4,55,24,119,1634210271,"~/reads3out.py"
-'8  2  0  ~/.aws/credentials
-|4,56,2,0,1634209951,"~/.aws/credentials"
-'9  8  30  ~/reads3out.py
-|4,57,8,30,1634209891,"~/reads3out.py"
+'0  2  1  ~/README.md
+|4,48,2,1,1634214491,"~/README.md"
+'1  3  10  ~/.gitignore
+|4,49,3,10,1634214344,"~/.gitignore"
+'2  2  7  ~/.gitignore
+|4,50,2,7,1634214214,"~/.gitignore"
+'3  2  7  ~/.gitignore
+|4,51,2,7,1634214214,"~/.gitignore"
+'4  1  0  ~/.github/workflows/aws.yml
+|4,52,1,0,1634213476,"~/.github/workflows/aws.yml"
+'5  1  0  ~/.gitignore
+|4,53,1,0,1634213390,"~/.gitignore"
+'6  1  0  ~/.gitignore
+|4,54,1,0,1634213390,"~/.gitignore"
+'7  1  0  ~/.gitignore
+|4,55,1,0,1634213390,"~/.gitignore"
+'8  1  0  ~/.gitignore
+|4,56,1,0,1634213390,"~/.gitignore"
+'9  1  0  ~/.git/config
+|4,57,1,0,1634213182,"~/.git/config"
 
 # Jumplist (newest first):
--'  7  7  ~/requirements.txt
-|4,39,7,7,1634210978,"~/requirements.txt"
--'  7  7  ~/requirements.txt
-|4,39,7,7,1634210967,"~/requirements.txt"
--'  1  0  ~/requirements.txt
-|4,39,1,0,1634210950,"~/requirements.txt"
--'  1  0  ~/requirements.txt
-|4,39,1,0,1634210950,"~/requirements.txt"
--'  189  0  ~/handler.py
-|4,39,189,0,1634210909,"~/handler.py"
--'  189  0  ~/handler.py
-|4,39,189,0,1634210909,"~/handler.py"
--'  189  0  ~/handler.py
-|4,39,189,0,1634210909,"~/handler.py"
--'  189  0  ~/handler.py
-|4,39,189,0,1634210909,"~/handler.py"
--'  159  0  ~/handler.py
-|4,39,159,0,1634210901,"~/handler.py"
--'  159  0  ~/handler.py
-|4,39,159,0,1634210901,"~/handler.py"
--'  159  0  ~/handler.py
-|4,39,159,0,1634210901,"~/handler.py"
--'  159  0  ~/handler.py
-|4,39,159,0,1634210901,"~/handler.py"
--'  82  0  ~/handler.py
-|4,39,82,0,1634210871,"~/handler.py"
--'  82  0  ~/handler.py
-|4,39,82,0,1634210871,"~/handler.py"
--'  82  0  ~/handler.py
-|4,39,82,0,1634210871,"~/handler.py"
--'  82  0  ~/handler.py
-|4,39,82,0,1634210871,"~/handler.py"
--'  49  0  ~/handler.py
-|4,39,49,0,1634210800,"~/handler.py"
--'  49  0  ~/handler.py
-|4,39,49,0,1634210800,"~/handler.py"
--'  49  0  ~/handler.py
-|4,39,49,0,1634210800,"~/handler.py"
--'  49  0  ~/handler.py
-|4,39,49,0,1634210800,"~/handler.py"
--'  25  16  ~/reads3out.py
-|4,39,25,16,1634210341,"~/reads3out.py"
--'  25  16  ~/reads3out.py
-|4,39,25,16,1634210341,"~/reads3out.py"
--'  25  16  ~/reads3out.py
-|4,39,25,16,1634210341,"~/reads3out.py"
--'  25  16  ~/reads3out.py
-|4,39,25,16,1634210341,"~/reads3out.py"
--'  25  16  ~/reads3out.py
-|4,39,25,16,1634210341,"~/reads3out.py"
--'  25  16  ~/reads3out.py
-|4,39,25,16,1634210341,"~/reads3out.py"
--'  25  16  ~/reads3out.py
-|4,39,25,16,1634210341,"~/reads3out.py"
--'  25  16  ~/reads3out.py
-|4,39,25,16,1634210341,"~/reads3out.py"
--'  24  120  ~/reads3out.py
-|4,39,24,120,1634210314,"~/reads3out.py"
--'  24  120  ~/reads3out.py
-|4,39,24,120,1634210314,"~/reads3out.py"
--'  24  120  ~/reads3out.py
-|4,39,24,120,1634210314,"~/reads3out.py"
--'  24  120  ~/reads3out.py
-|4,39,24,120,1634210314,"~/reads3out.py"
--'  24  120  ~/reads3out.py
-|4,39,24,120,1634210314,"~/reads3out.py"
--'  24  120  ~/reads3out.py
-|4,39,24,120,1634210314,"~/reads3out.py"
--'  24  120  ~/reads3out.py
-|4,39,24,120,1634210314,"~/reads3out.py"
--'  24  120  ~/reads3out.py
-|4,39,24,120,1634210314,"~/reads3out.py"
--'  24  120  ~/reads3out.py
-|4,39,24,120,1634210306,"~/reads3out.py"
--'  24  120  ~/reads3out.py
-|4,39,24,120,1634210306,"~/reads3out.py"
--'  24  120  ~/reads3out.py
-|4,39,24,120,1634210306,"~/reads3out.py"
--'  24  120  ~/reads3out.py
-|4,39,24,120,1634210306,"~/reads3out.py"
--'  24  120  ~/reads3out.py
-|4,39,24,120,1634210306,"~/reads3out.py"
--'  24  120  ~/reads3out.py
-|4,39,24,120,1634210306,"~/reads3out.py"
--'  24  120  ~/reads3out.py
-|4,39,24,120,1634210306,"~/reads3out.py"
--'  24  120  ~/reads3out.py
-|4,39,24,120,1634210306,"~/reads3out.py"
--'  24  119  ~/reads3out.py
-|4,39,24,119,1634210271,"~/reads3out.py"
--'  24  119  ~/reads3out.py
-|4,39,24,119,1634210271,"~/reads3out.py"
--'  24  119  ~/reads3out.py
-|4,39,24,119,1634210271,"~/reads3out.py"
--'  24  119  ~/reads3out.py
-|4,39,24,119,1634210271,"~/reads3out.py"
--'  24  119  ~/reads3out.py
-|4,39,24,119,1634210271,"~/reads3out.py"
--'  24  119  ~/reads3out.py
-|4,39,24,119,1634210271,"~/reads3out.py"
--'  24  119  ~/reads3out.py
-|4,39,24,119,1634210271,"~/reads3out.py"
--'  24  119  ~/reads3out.py
-|4,39,24,119,1634210271,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  8  30  ~/reads3out.py
-|4,39,8,30,1634209965,"~/reads3out.py"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
--'  2  0  ~/.aws/credentials
-|4,39,2,0,1634209951,"~/.aws/credentials"
+-'  2  1  ~/README.md
+|4,39,2,1,1634214491,"~/README.md"
+-'  5  0  ~/README.md
+|4,39,5,0,1634214476,"~/README.md"
+-'  1  0  ~/README.md
+|4,39,1,0,1634214464,"~/README.md"
+-'  3  10  ~/.gitignore
+|4,39,3,10,1634214344,"~/.gitignore"
+-'  3  10  ~/.gitignore
+|4,39,3,10,1634214344,"~/.gitignore"
+-'  2  7  ~/.gitignore
+|4,39,2,7,1634214336,"~/.gitignore"
+-'  2  7  ~/.gitignore
+|4,39,2,7,1634214336,"~/.gitignore"
+-'  2  7  ~/.gitignore
+|4,39,2,7,1634214214,"~/.gitignore"
+-'  2  7  ~/.gitignore
+|4,39,2,7,1634214214,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1634213676,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1634213676,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1634213676,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1634213676,"~/.gitignore"
+-'  1  0  ~/.github/workflows/aws.yml
+|4,39,1,0,1634213476,"~/.github/workflows/aws.yml"
+-'  1  0  ~/.github/workflows/aws.yml
+|4,39,1,0,1634213476,"~/.github/workflows/aws.yml"
+-'  1  0  ~/.github/workflows/aws.yml
+|4,39,1,0,1634213476,"~/.github/workflows/aws.yml"
+-'  1  0  ~/.github/workflows/aws.yml
+|4,39,1,0,1634213476,"~/.github/workflows/aws.yml"
+-'  1  0  ~/.github/workflows/aws.yml
+|4,39,1,0,1634213476,"~/.github/workflows/aws.yml"
+-'  1  0  ~/.github/workflows/aws.yml
+|4,39,1,0,1634213476,"~/.github/workflows/aws.yml"
+-'  1  0  ~/.github/workflows/aws.yml
+|4,39,1,0,1634213476,"~/.github/workflows/aws.yml"
+-'  1  0  ~/.github/workflows/aws.yml
+|4,39,1,0,1634213476,"~/.github/workflows/aws.yml"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1634213390,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1634213390,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1634213390,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1634213390,"~/.gitignore"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1634213182,"~/.git/config"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
+-'  4  0  ~/.git
+|4,39,4,0,1634213163,"~/.git"
 
 # History of marks within files (newest to oldest):
+
+> ~/README.md
+	*	1634214491	0
+	"	2	1
+	^	2	2
+	.	2	1
+	+	9	18
+	+	5	1
+	+	2	0
+	+	1	3
+	+	2	1
+
+> ~/.gitignore
+	*	1634214343	0
+	"	3	10
+	^	3	11
+	.	3	0
+	+	1	6
+	+	1	15
+	+	1	3
+	+	2	8
+	+	3	0
+
+> ~/.github/workflows/aws.yml
+	*	1634213475	0
+	"	1	0
+
+> ~/.git/config
+	*	1634213181	0
+	"	1	0
 
 > ~/requirements.txt
 	*	1634210977	0
@@ -362,10 +402,6 @@
 	+	15	23
 	+	16	30
 	+	17	14
-
-> ~/.git/config
-	*	1633613178	0
-	"	1	0
 
 > /etc/group
 	*	1633580830	0

@@ -13,7 +13,7 @@ FROM python:${RUNTIME_VERSION} AS python-alpine
 #    libstdc++
 
 RUN apt-get update \
-    && apt-get install -y cmake ca-certificates libgl1-mesa-glx
+    && apt-get install -y cmake ca-certificates libgl1-mesa-glx apt-utils
 RUN python${RUNTIME_VERSION} -m pip install --upgrade pip
 
 # Stage 2 - build function and dependencies
