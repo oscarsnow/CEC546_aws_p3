@@ -1,13 +1,28 @@
-#### CSE546 Project Group 9 ： 
-# 从S3里下载视频，调用FFMPEG分解为图片，调用人脸识别库得到人名，根据名字调用db获取全部信息并存入S3中
+# CSE546 Project Group 9 ： 
+从S3里下载视频，调用FFMPEG分解为图片，调用人脸识别库得到人名，根据名字调用db获取全部信息并存入S3中
 
 ####Lamda 调内存和超时，加载快 
-# lambda->function->project->configuration->General configuration
+lambda->function->project->configuration->General configuration
 
 #### git push ####
-git add .
-git commit -m "v1.1"
-git push -u origin main
+#使用.gitignore忽略.开头的文件以及文件夹
+#1 在.gitignore中输入以下内容
+# .开头的任何文件
+.*
+# 排除.gitignore本身，排除符号就是逻辑非
+!/.gitignore
+!/.github
+
+#2 清除git缓存
+#若是不清除缓存，修改.gitignore是没有效果的。
+#因为cached是暂存区，工作目录的修改需要与暂存区比较；
+#因此git status会显示差异，为了生效，需要删除暂存区；
+#最后将所有本地文件跟踪一下，得到最新的暂存区文件。
+ 
+git rm -r --cached .               # 删除缓存区
+git add .                          # 添加当前内容到缓存区
+git commit -m 'v1.2'               # 将缓存区的内容提交到本地仓库
+git push -u origin master          # 将本地仓库提交到服务器仓库
 
 #### Build docker in ubuntu and Push image to ECR ####
 TAG=''
