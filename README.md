@@ -2,60 +2,87 @@
 从S3里下载视频，调用FFMPEG分解为图片，调用人脸识别库得到人名，根据名字调用db获取全部信息并存入S3中
 
 #### For win 10 ####
-pip3 install dlib-19.19.0-cp38-cp38-win_amd64.whl.whl
+##### pip3 install dlib-19.19.0-cp38-cp38-win_amd64.whl.whl
 
 #### Dockerfile add ####
-COPY config.ini ${FUNCTION_DIR}
-COPY encoding ${FUNCTION_DIR}
+##### COPY config.ini ${FUNCTION_DIR}
+##### COPY encoding ${FUNCTION_DIR}
 
 ####Lamda 调内存和超时，加载快 
-lambda->function->project->configuration->General configuration
+##### lambda->function->project->configuration->General configuration
 
 #### git push ####
 #使用.gitignore忽略.开头的文件以及文件夹
+
 #1 在.gitignore中输入以下内容
-# .开头的任何文件
-.*
-# 排除.gitignore本身，排除符号就是逻辑非
-!/.gitignore
-!/.github
+#.开头的任何文件
+##### .*
+####排除.gitignore本身，排除符号就是逻辑非
+#### !/.gitignore
+#### !/.github
 
 #2 清除git缓存
-#若是不清除缓存，修改.gitignore是没有效果的。
-#因为cached是暂存区，工作目录的修改需要与暂存区比较；
-#因此git status会显示差异，为了生效，需要删除暂存区；
-#最后将所有本地文件跟踪一下，得到最新的暂存区文件。
- 
-git rm -r --cached .               # 删除缓存区
-git add .                          # 添加当前内容到缓存区
-git commit -m 'v1.2'               # 将缓存区的内容提交到本地仓库
-git push -u origin master          # 将本地仓库提交到服务器仓库
 
-#### Build docker in ubuntu and Push image to ECR ####
+####若是不清除缓存，修改.gitignore是没有效果的。
+
+####因为cached是暂存区，工作目录的修改需要与暂存区比较；
+
+####因此git status会显示差异，为了生效，需要删除暂存区；
+
+####最后将所有本地文件跟踪一下，得到最新的暂存区文件。
+ 
+##### git rm -r --cached .               # 删除缓存区
+##### git add .                          # 添加当前内容到缓存区
+##### git commit -m 'v1.2'               # 将缓存区的内容提交到本地仓库
+##### git push -u origin master          # 将本地仓库提交到服务器仓库
+
+####Build docker in ubuntu and Push image to ECR ####
+
 TAG=''
+
 REGION=
+
 AWS_ACCOUNT_ID=
-# Build the docker image
+
+#Build the docker image
+
 docker build -t $TAG .
-# Create a ECR repository  $AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/$TAG
+
+#Create a ECR repository  $AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/$TAG
+
 aws ecr create-repository --repository-name $TAG --image-scanning-configuration scanOnPush=true --region $REGION
-# Tag the image to match the repository name
+
+#Tag the image to match the repository name
+
 docker tag $TAG:latest $AWS_ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com/$TAG:latest
-# Register docker to ECR
+
+#Register docker to ECR
+
 aws ecr get-login-password --region $REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com
-# Push the image to ECR
+
+#Push the image to ECR
+
 docker push $AWS_ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com/$TAG:latest
 
 
 #### Docker Command for testing ####
+
 docker run -p 9000:8080 486003376662.dkr.ecr.us-east-1.amazonaws.com/project3-group9&
+
 docker logs -f 3a9002b294b8
+
 docker exec -it 3a9002b294b8 /bin/bash
+
 docker cp test_0.mp4 3a9002b294b8:/tmp
+
 docker cp handler.py 3a9002b294b8:/home/app
+
 docker cp config.ini 3a9002b294b8:/home/app
+
 docker cp people_i_know 3a9002b294b8:/home/app
+
 #### run by shell for testing ####
+
 curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{"Records": [
     {
       "eventVersion": "2.0",
@@ -92,6 +119,7 @@ curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d
       }
     }
   ]}'
+  
 #### dangling images ####
 docker rmi $(docker images -f "dangling=true" -q)
 
