@@ -4,3 +4,5 @@
 # 排除.gitignore本身，排除符号就是逻辑非
 !/.gitignore
 !/.github
+
+config.ini
