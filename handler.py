@@ -21,20 +21,12 @@ cf = configparser.ConfigParser()
 cf.read(os.path.join(home_dir, 'config.ini'))
 
 # AWS ENV
-AWS_REGION = cf.get("EC2", "AWS_REGION")
-aws_config = Config(
-    region_name=AWS_REGION,
-    signature_version='v4',
-    retries={
-        'max_attempts': 10,
-        'mode': 'standard'
-    }
-)
+AWS_REGION = 'us-east-1'
+input_bucket = '546proj3'
+output_bucket = '546proj3output'
 # S3
 s3 = boto3.resource("s3", region_name=AWS_REGION)
 s3_client = boto3.client('s3', region_name=AWS_REGION)
-input_bucket = cf.get("S3", "input_bucket")
-output_bucket = cf.get("S3", "output_bucket")
 # DDB
 dynamodb = boto3.resource('dynamodb', region_name=AWS_REGION)
 table = dynamodb.Table('student_data')
