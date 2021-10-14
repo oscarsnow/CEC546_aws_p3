@@ -1,11 +1,10 @@
-# CSE546 Project Group 9 
+# CSE546 Project Group 9
 从S3里下载视频，调用FFMPEG分解为图片，调用人脸识别库得到人名，根据名字调用db获取全部信息并存入S3中
 
 #### For win 10 ####
-##### pip3 install dlib-19.19.0-cp38-cp38-win_amd64.whl.whl
+##### pip3 install ./tmp/dlib-19.19.0-cp38-cp38-win_amd64.whl.whl
 
 #### Dockerfile add ####
-##### COPY config.ini ${FUNCTION_DIR}
 ##### COPY encoding ${FUNCTION_DIR}
 
 ####Lamda 调内存和超时，加载快 
@@ -33,8 +32,8 @@
  
 ##### git rm -r --cached .               # 删除缓存区
 ##### git add .                          # 添加当前内容到缓存区
-##### git commit -m 'Final Version'      # 将缓存区的内容提交到本地仓库
-##### git push -u origin main            # 将本地仓库提交到服务器仓库
+##### git commit -m 'v1.2'               # 将缓存区的内容提交到本地仓库
+##### git push -u origin master          # 将本地仓库提交到服务器仓库
 
 ####Build docker in ubuntu and Push image to ECR ####
 
