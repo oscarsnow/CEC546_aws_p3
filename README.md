@@ -1,6 +1,13 @@
 # CSE546 Project Group 9 ： 
 从S3里下载视频，调用FFMPEG分解为图片，调用人脸识别库得到人名，根据名字调用db获取全部信息并存入S3中
 
+#### For win 10 ####
+pip3 install dlib-19.19.0-cp38-cp38-win_amd64.whl.whl
+
+#### Dockerfile add ####
+COPY config.ini ${FUNCTION_DIR}
+COPY encoding ${FUNCTION_DIR}
+
 ####Lamda 调内存和超时，加载快 
 lambda->function->project->configuration->General configuration
 
@@ -53,7 +60,7 @@ curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d
     {
       "eventVersion": "2.0",
       "eventSource": "aws:s3",
-      "awsRegion": "",
+      "awsRegion": "us-east-1",
       "eventTime": "1970-01-01T00:00:00.000Z",
       "eventName": "ObjectCreated:Put",
       "userIdentity": {
