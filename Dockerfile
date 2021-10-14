@@ -13,7 +13,7 @@ FROM python:${RUNTIME_VERSION} AS python-alpine
 #    libstdc++
 
 RUN apt-get update \
-    && apt-get install -y cmake ca-certificates libgl1-mesa-glx apt-utils
+    && apt-get install -y cmake ca-certificates libgl1-mesa-glx
 RUN python${RUNTIME_VERSION} -m pip install --upgrade pip
 
 # Stage 2 - build function and dependencies
@@ -57,6 +57,7 @@ RUN apt-get install -y ffmpeg
 
 # Copy handler function
 COPY requirements.txt ${FUNCTION_DIR}
+COPY people_i_know ${FUNCTION_DIR}/people_i_know
 RUN python${RUNTIME_VERSION} -m pip install -r requirements.txt --target ${FUNCTION_DIR}
 COPY entry.sh /
 
