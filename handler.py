@@ -155,6 +155,8 @@ def face_recognition_handler(event, context):
     ## upload it to the output bucket in S3
     upload_files(f'{output_path}/{file_name_prefix}.csv', output_bucket, f'{file_name_prefix}.csv')
 
+    return academic_info
+
 """
 
 if __name__ == '__main__':
