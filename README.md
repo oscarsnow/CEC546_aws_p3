@@ -33,8 +33,8 @@
  
 ##### git rm -r --cached .               # 删除缓存区
 ##### git add .                          # 添加当前内容到缓存区
-##### git commit -m 'v1.2'               # 将缓存区的内容提交到本地仓库
-##### git push -u origin master          # 将本地仓库提交到服务器仓库
+##### git commit -m 'Final Version'      # 将缓存区的内容提交到本地仓库
+##### git push -u origin main            # 将本地仓库提交到服务器仓库
 
 ####Build docker in ubuntu and Push image to ECR ####
 
